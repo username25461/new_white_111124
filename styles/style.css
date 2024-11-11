@@ -1,0 +1,376 @@
+/* Основной стиль для сайта */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Заголовок */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Карточка товара */
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Изображения товаров */
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
+/* Название и описание товара */
+.product-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Цена товара */
+.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+/* Кнопка заказа */
+.order-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.order-btn:hover {
+    background-color: #45a049;
+}
+
+/* Стили для скрытых элементов */
+.hidden-block {
+    display: none;
+}
+
+.empty-element {
+    display: none;
+}
+
+.extra-article {
+    display: none;
+}
+
+/* Стили для случайных классов и тегов */
+.class-12345678 {
+    background-color: #ffeb3b; /* Пример случайного фона для элементов с этим классом */
+}
+
+.class-23456789 {
+    font-style: italic;
+}
+
+.class-34567890 {
+    border: 2px dashed #3f51b5;
+}
+
+.class-45678901 {
+    color: #e91e63;
+}
+
+/* Для footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для форм на странице заказа */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Отображение ошибок при неправильных данных в форме */
+.error {
+    color: red;
+    font-size: 0.9rem;
+}
+
+/* Стиль для модальных окон */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Позиционирование случайных тегов */
+.extra-article {
+    display: none;
+}
+
+.hidden-block {
+    display: none;
+}
+
+/* Анимация переходов для элементов */
+.product-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.extra-block{
+    display: none;
+}
+.additional-section{
+    display: none;
+}
+.random-header{
+    display: none;
+}
+.extra-footer{
+    display: none;
+}
+.random-aside{
+    display: none;
+}
+.random-nav{
+    display: none;
+}
+.extra-figure{
+    display: none;
+}
+.random-quote {
+    display: none;
+}
+.extra-wrapper {
+    display: none;
+}
+.extra-list {
+    display: none;
+}
+.random-button{
+    display: none;
+}
+.random-progress{
+    display: none;
+}
+.random-label{
+    display: none;
+}
+.random-span {
+    display: none;
+}
+
+.extra-article {
+    display: none;
+}
+
+/* Общие стили для description-section */
+.description-section {
+    background-color: #f5f5f5; /* Светлый серый фон */
+    border-radius: 8px; /* Округленные углы */
+    padding: 20px; /* Отступы вокруг текста */
+    margin: 20px auto; /* Автоматические отступы сверху и снизу для центровки */
+    /*max-width: 1200px; *//* Ограничение по ширине */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Стиль текста */
+.description-section .description-text {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem; /* Чуть крупнее стандартного текста */
+    color: #333; /* Темный текст */
+    line-height: 1.6; /* Увеличенный межстрочный интервал */
+    text-align: center; /* Центровка текста */
+}
+
+/* Анимация для плавного появления при загрузке */
+.description-section {
+    /*opacity: 0;*/
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.description-section.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cookie-banner p {
+    display: inline;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.cookie-banner .accept-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cookie-banner .accept-button:hover {
+    background-color: #45a049;
+}
+
+.product-detail {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.product-detail h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.product-detail .product-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 20px 0;
+}
+
+.product-detail p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.product-detail .price {
+    font-size: 1.5em;
+    color: #d9534f;
+    margin-top: 10px;
+}
+
+.product-detail .order-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.product-detail .order-btn:hover {
+    background-color: #4cae4c;
+}
