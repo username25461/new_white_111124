@@ -6,7 +6,7 @@ $productName = isset($_GET['name']) ? $_GET['name'] : null;
 $language = getLanguage();
 $translations = getTranslations($language);
 $hash = md5($_SERVER['HTTP_HOST']);
-
+$hash_value3 = substr($hash, 2, 7);
 
 
 // Поиск информации о товаре
@@ -52,10 +52,11 @@ $image = getRandomImage($product['img'], $product['indez']);
         </div>
     </main>
 
-    <footer class="<?php echo $hash; ?>">
+    <footer class="<?php echo $hash_value3; ?>">
         <a href="terms.html">Terms & Conditions</a> |
         <a href="privacy.html">Privacy policy</a> |
-        <a href="return.html">Returns, Refunds and Exchanges Policy</a>
+        <a href="return.html">Returns, Refunds and Exchanges Policy</a>|
+        <a href="disclaimer.html">Disclaimer</a>
     </footer>
 </body>
 </html>
